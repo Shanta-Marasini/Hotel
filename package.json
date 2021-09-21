@@ -1,0 +1,14 @@
+{
+  "name": "11_hotel",
+  "version": "1.0.0",
+  "description": "hotel website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/main.scss dist/css/style.css --recursive --source-map-root dist/css/style.css --source-map-embed true"
+  },
+  "author": "santa",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

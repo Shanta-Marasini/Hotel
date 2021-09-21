@@ -1,0 +1,164 @@
+//max-width:992px
+@include mediaLg {
+  .my-navbar {
+    .navbarr-header {
+      .navbarr-toggle {
+        display: inline-block !important;
+        position: absolute;
+        top: 30%;
+        right: 10px;
+      }
+    }
+    .navv-menu {
+      background: $lightest-primary-color;
+
+      li {
+        display: block !important;
+        border: none !important;
+        height: 20px !important;
+        text-align: left !important;
+        padding: 0 !important;
+      }
+    } //nav menu end ul
+    .nav-button {
+      position: absolute;
+      top: 5px;
+      right: 40%;
+    }
+  }
+  .about {
+    &-image {
+      justify-content: center;
+    }
+  }
+}
+
+//max-width:768px
+@include mediaMd {
+  .infra-flex {
+    flex-direction: column !important;
+    .card {
+      max-width: 100% !important ;
+      margin-bottom: 10px !important;
+    }
+  }
+}
+
+// max-width:576px
+@include mediaSm {
+  //navbar
+  .my-navbar {
+    .nav-button {
+      position: absolute;
+      top: 5px;
+      right: 25%;
+    }
+  }
+  //heading form
+  .bg-image {
+    height: 680px;
+
+    p {
+      padding: 20px 20px !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      input {
+        display: block;
+        width: 100% !important;
+      }
+      button {
+        margin-top: 10px;
+        display: block;
+      }
+    }
+  } //heading form end
+
+  //about us start
+  .about {
+    @include px-10;
+    &-image {
+      justify-content: center;
+      img {
+        height: 80% !important;
+        width: 80% !important;
+        &:nth-child(3) {
+          transform: translateY(-50px) rotate(15deg) !important;
+        }
+      }
+    }
+  }
+  //about us end
+  .infra-head {
+    @include px-10;
+  }
+  .infra-flex {
+    @include px-10;
+    .card {
+      margin: 0 !important;
+    }
+  }
+  .food {
+    // @include px-10;
+  }
+  .room {
+    @include px-10;
+  }
+  .upper-footer,
+  .middle-footer,
+  .lower-footer {
+    @include px-10;
+    // font-size: 1.2rem !important;
+  }
+} //media end
+
+//max-width:392px
+@include mediaXSm {
+  .my-navbar {
+    .navbarr-header {
+      .navbarr-brand {
+        img {
+          height: 55px !important;
+          width: 100px !important;
+        }
+      }
+    }
+    .nav-button {
+      right: 17%;
+      button {
+        padding: 4px 8px !important;
+      }
+    }
+  } //navbarr end
+
+  .infra-flex {
+    .card {
+      img {
+        height: 200px !important;
+      }
+    }
+  }
+  // .upper-footer {
+  //   font-size: 1.1rem !important;
+  // }
+  .middle-footer {
+    ul {
+      li {
+        height: 27px !important;
+        width: 27px !important;
+      }
+    }
+  }
+}
+//min-width:1200
+@include media-min {
+  .about {
+    &-image {
+      justify-content: center;
+      img {
+        height: 195px !important;
+        width: 195px !important;
+      }
+    }
+  }
+}

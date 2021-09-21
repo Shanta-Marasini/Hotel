@@ -1,0 +1,37 @@
+//import all the partials
+//@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "abstract_or_utilities/variables";
+//@import "abstract_or_utilities/functions";
+@import "abstract_or_utilities/mixins";
+
+@import "vendors/responsive_index";
+//@import "vendors/jquery-ui";
+
+@import "base/reset";
+@import "base/typography";
+
+@import "layout/header";
+@import "layout/footer";
+//@import "layout/forms";
+//@import "layout/grid";
+@import "layout/navigation";
+
+//@import "components_or_modules/buttons";
+//@import "components_or_modules/carousel";
+//@import "components_or_modules/slider";
+//@import "components_or_modules/cart_number";
+//@import "components_or_modules/categories";
+//@import "components_or_modules/hoverExpand";
+//@import "components_or_modules/home_card";
+//@import "components_or_modules/form.scss";
+//@import "components_or_modules/verticalMenu.scss";
+
+@import "pages/index";
+@import "pages/forall";
+
+//@import "pages/about";
+//@import "pages/contact";
+//@import "pages/responsiveHome";
+//@import "themes/admin";
+//@import "themes/theme";

@@ -1,0 +1,86 @@
+.upper-footer {
+  box-shadow: 0 0 10px $footer-link-color;
+
+  background: $footer-color;
+
+  padding: 60px 40px 40px;
+  font-size: 1.4rem;
+  h3 {
+    color: $footer-link-color;
+  }
+  .footer-line {
+    height: 3px;
+    width: 30px;
+    background: $footer-link-color;
+    margin: 10px 0;
+  }
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: 2px;
+      a {
+        color: $footer-link-color;
+      }
+      &:hover {
+        color: black;
+        transform: translateX(10px);
+        border-left: 2px solid $footer-link-color;
+        padding-left: 2px;
+        @include trans-fast;
+      }
+      img {
+        border-radius: 5px;
+        height: 40px;
+        cursor: pointer;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+.middle-footer {
+  box-shadow: 0 0 10px $footer-box-color;
+  font-size: 1.6rem;
+  padding: 40px;
+  text-align: center;
+  background: $footer-color;
+  ul {
+    list-style: none;
+    li {
+      height: 40px;
+      width: 40px;
+      background: $lightest-primary-color;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+      a {
+        color: $darkest-primary-color;
+        i {
+          &:hover {
+            transform: rotate(360deg);
+            @include trans;
+          }
+        }
+      }
+    }
+  }
+}
+.lower-footer {
+  background: $footer-color;
+  display: flex;
+  padding: 20px 40px;
+  font-size: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px $footer-box-color;
+  p {
+    color: $footer-link-color;
+    a {
+      text-decoration: underline;
+      color: $primary-color;
+    }
+  }
+}
